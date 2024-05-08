@@ -1,8 +1,13 @@
-import sys
+fruits = ["apple", "Mango", "Banana"]
+x, y, z = fruits
 
-var = "Muhammad"
-size = sys.getsizeof(var)
+a = "python"
 
-print(var)
-print(id(var))
-print(size, "bytes", sep=" = ", end=".")
+def _my_func():
+    global a
+    a = "C++"
+    print(a)
+
+print(x, y, z)
+_my_func()
+print(a)
