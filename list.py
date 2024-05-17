@@ -11,7 +11,7 @@ this_list.extend(tropical)
 
 print(girl_friend_list)
 
-girl_friend_list.remove("Muna")
+# girl_friend_list.remove("Muna")
 this_list.clear()
 
 i = 0
@@ -26,3 +26,20 @@ print(this_list)
 [print(x) for x in girl_friend_list]
 girl_friend_list.sort(reverse = True)
 print(girl_friend_list)
+
+# copy list
+new_girl_list = list(girl_friend_list)
+new_girl_list1 = new_girl_list.copy()
+print(new_girl_list)
+print(new_girl_list1)
+
+new_girl_list2 = []
+for i in range(len(new_girl_list1)):
+    new_girl_list2.append(new_girl_list1[i])
+
+x = new_girl_list2.count("Muna")
+print(x)
+
+abc = reversed('hello')
+print(abc)
+
