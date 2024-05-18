@@ -42,4 +42,3 @@ print(x)
 
 abc = reversed('hello')
 print(abc)
-

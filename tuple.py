@@ -1,8 +1,17 @@
-import array as arr
+t = tuple((2, "muna", 5, "Jannatul"))
+add_t = ("Israt",)
 
-t = (2, "muna", 5, "Jannatul")
+t_list = list(t)
+t_list[0] = "Mimi"
+t = tuple(t_list)
+t += add_t
+t = list(t)
+t.remove(5)
 
-x = range(20, 1, -2)
+(w, x, *y, z) = t
 
-a = arr.array('i', [2, 3, 4, 5])
-print(a)
+for i in range(len(t)):
+    print(t[i])
+
+print(t.index("Jannatul"))
+
