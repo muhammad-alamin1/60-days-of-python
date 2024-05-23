@@ -14,7 +14,7 @@ class Student(Person):
         self.graduationyear = g_year
 
     def welcome(self):
-        return f"Welcome {self.fname} {self.lname} to the class of {self.g_year}"
+        return f"Welcome {self.fname} {self.lname} to the class of {self.graduationyear}"
 
 p1 = Person("Muhammad", "Al-Amin")
 
